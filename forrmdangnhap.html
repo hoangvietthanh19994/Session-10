@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 400px;
+            border :1px solid black;
+            background-image: linear-gradient(to right,violet,pink);
+            margin:auto;
+        }
+        .center{
+            text-align: center;
+            padding: 15px;
+        }
+        .form-controls{
+            padding: 10px;
+        }
+        .form-controls input{
+            width: 350px;
+            border: none;
+            border-bottom: 2px violet solid;
+        }
+        .checkbox{
+            /* margin:0 120px; */
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="#">
+        <h3 class="center">ĐĂNG NHẬP</h3>
+        <div class="form-controls">
+            Nhập tên đăng ký <br>
+            <input type="text">
+        </div>
+        <div class="form-controls">
+            Nhập mật khẩu <br>
+            <input type="text">
+        </div>
+        
+        <div class="checkbox">
+            <input type="checkbox">Nhớ mật khẩu lần sau
+        </div>
+        <div class="center">
+            <input type="submit" value="Đăng nhập" > <br>
+        </div>
+        <div class="center">
+           <a href="#">Quên mật khẩu</a>
+        </div>
+        </div>
+        
+    </form>
+</body>
+</html>

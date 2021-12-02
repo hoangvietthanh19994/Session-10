@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: aqua;
+            width: 350px;
+            padding: 30px;
+            line-height: 30px;
+        }
+        .form-control{
+            display: flex;
+        }
+        .form-control label{
+            width: 150px;
+        }
+        .city select{
+            margin-left: 75px;
+            width: 170px;
+        }
+        fieldset{
+            width: 350px;
+        }
+       
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Fom Đăng Kí</legend>
+        <form method="post" action="#">
+            <div class="form-control">
+                <label for="">Họ và Tên:</label>
+                <input type="text" placeholder="Hãy nhập tên người dùng">
+            </div>
+            <div class="form-control">
+                <label for="">Tên tài khoản:</label>
+                <input type="text">
+            </div>
+            <div class="form-control">
+                <label for="">Email:</label>
+                <input type="email">
+            </div>
+            <div class="form-control">
+                <label for="">Mật khẩu:</label>
+                <input type="password" placeholder="Nhập pass">
+            </div>
+            <div class="form-control" id="date">
+                <label for="">Năm sinh:</label>
+                <input type="date" style="width: 165px;">
+            </div>
+            <div class="form-control">
+                <label for="">Giới tính:</label>
+                <input type="radio" name="gender">Nam
+                <input type="radio" name="gender">Nữ
+            </div>
+            <div class="city">
+                <label for="" class="city1">Thành phố:</label>
+                <select name="city-new" id="">
+                    <option value="Đà nẵng">Đà nẵng</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Hcm">Hồ Chí Minh</option>
+                </select> 
+                <div class="form-control">
+                    <input type="checkbox"> Tôi đã đọc hiểu các điều khoản
+                </div>
+                <div class="form-control">
+               <input type="submit" value="Đăng Kí" style="width:150px"> 
+               <input type="reset" value="Reset" style="width: 150px;"> 
+                </div>
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
